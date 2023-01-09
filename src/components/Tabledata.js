@@ -151,6 +151,9 @@ const Tabledata= ()=>{
         setBtnStart(!btnStart)
     }
     
+    const reloadPage = () => {
+        window.location.reload()
+      }
     return (
         <div>
             <h1>BINGO GAME</h1>
@@ -162,7 +165,8 @@ const Tabledata= ()=>{
             
             {winner && (
                 <div>
-                    <span>Player {winner} is the winner </span> 
+                    <span>Player {winner} is the winner </span> <br></br>
+                    <button style={{marginTop: "20px"}} onClick={()=>(reloadPage())}> Play Again</button>
                 </div>)
             }
             

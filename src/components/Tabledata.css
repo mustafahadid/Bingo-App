@@ -17,28 +17,41 @@ button:hover{
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;    
+    margin-left: 20px;
+    margin-right: 20px;  
+    padding:0;  
 }
 table td{
     border: 1px solid gray;
-    width: 80px;
-    height: 80px;
+    box-sizing: border-box;
     background: #fff;
     color: black;
     cursor: pointer;
     font-size: 0.8em;
+    width: 80px;
+    height: 80px;
+    padding: 0;
 }
 
 .emoji{
     font-Size: 50px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
        
 .emoji{
     font-Size: 30px;
 }
+table td {
+    width: 55px;
+    height: 55px;
+    font-size: 0.5em;
 }
+
+}
+
+
+  
